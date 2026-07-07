@@ -1,13 +1,13 @@
 var now1 = new Date()
 
 function createtime1() {
-  var grt = new Date('08/09/2022 00:00:00') //此处修改你的建站时间或者网站上线时间
+  var grt = new Date('01/01/2021 00:00:00') //此处修改你的建站时间或者网站上线时间
   now1.setTime(now1.getTime() + 250)
   var days = (now1 - grt) / 1000 / 60 / 60 / 24
   var dnum = Math.floor(days)
 
   var ascll = [
-    `欢迎来到LuckyNwaの小家!`,
+    `欢迎来到小维的博客园!`,
     `Future is now 🍭🍭🍭`,
     `
 
@@ -23,7 +23,7 @@ function createtime1() {
     '小站已经苟活',
     dnum,
     '天啦!',
-    '©2022 By lucky友人A'
+    '♈2021 By luckyNwa'
   ]
 
   setTimeout(
@@ -51,16 +51,16 @@ function createtime2() {
     ` 🤪 `
   ]
 
-  setTimeout(
-    console.log.bind(
-      console,
-      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}`,
-      'color:white; background-color:#10bcc0',
-      '',
-      '',
-      'background:url("https://unpkg.zhimg.com/anzhiyu-assets@latest/image/common/tinggge.gif") no-repeat;font-size:450%'
-    )
-  )
+  // setTimeout(
+  //   console.log.bind(
+  //     console,
+  //     `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}`,
+  //     'color:white; background-color:#10bcc0',
+  //     '',
+  //     '',
+  //     'background:url("https://unpkg.zhimg.com/anzhiyu-assets@latest/image/common/tinggge.gif") no-repeat;font-size:450%'
+  //   )
+  // )
 
   setTimeout(
     console.log.bind(
@@ -74,7 +74,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      '%c ⚡ Powered by luckyNwa %c 你正在访问LuckyNwaの小家',
+      '%c ⚡ Powered by luckyNwa %c 你正在访问小维的博客园',
       'color:white; background-color:#f0ad4e',
       ''
     )
@@ -100,6 +100,6 @@ function createtime2() {
 createtime2()
 
 // 重写console方法
-console.log = function () {}
-console.error = function () {}
-console.warn = function () {}
+console.log = function () { }
+console.error = function () { }
+console.warn = function () { }
